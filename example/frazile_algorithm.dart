@@ -20,17 +20,15 @@ class FacemashHome extends StatefulWidget {
 
 class _FacemashHomeState extends State<FacemashHome> {
   
-  Frazile_Algo _frazile = Frazile_Algo();
-  
   void updateExp(double $a, double $b) async {
     setState(() {
-      $expected = _frazile.facemash_expected($b, $a);
+      $expected = Frazilealgo.facemashexpected($b, $a);
     });
   }
 
   static double $Ra = 1512.0;
   static double $Rb = 1488.0;
-  double $expected = _frazile.facemash_expected($Rb, $Ra);
+  double $expected = Frazilealgo.facemashexpected($Rb, $Ra);
   // double $expected = Frazile_Algo().facemash_win($Ra.toInt(), Frazile_Algo().facemash_expected($Rb, $Ra));
 
   @override
