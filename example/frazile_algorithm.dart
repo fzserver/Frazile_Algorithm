@@ -19,7 +19,6 @@ class FacemashHome extends StatefulWidget {
 }
 
 class _FacemashHomeState extends State<FacemashHome> {
-  
   void updateExp(double $a, double $b) async {
     setState(() {
       $expected = Frazilealgo.facemashexpected($b, $a);
@@ -45,7 +44,9 @@ class _FacemashHomeState extends State<FacemashHome> {
                 style: TextStyle(color: Colors.pink, fontSize: 20.0),
               ),
             ),
-            Padding(padding: EdgeInsets.only(top: 20.0),),
+            Padding(
+              padding: EdgeInsets.only(top: 20.0),
+            ),
             MaterialButton(
               child: Text('Update'),
               textColor: Colors.white,

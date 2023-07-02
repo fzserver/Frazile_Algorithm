@@ -1,10 +1,11 @@
 name: frazile_algorithm
 description: Frazile Algorithm is a open source package which provides users the most popular & commonly used algorithms in popular companies Google, Facebook, Instagram, WhatsApp.
-version: 1.0.0
+version: 2.0.0
 homepage: https://github.com/FrazileDevelopers/Frazile_Algorithm
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <4.0.0"
+  flutter: ">=1.12.0"
 
 dependencies:
   flutter:
